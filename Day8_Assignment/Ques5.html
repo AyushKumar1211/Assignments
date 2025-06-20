@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse an Array</title>
+    </head>
+    <body>
+        <script>
+            let str = prompt("Enter numbers separated by commas (e.g. 1,2,3,4):");
+            let org_arr = str.split(',');
+            let rvr_arr = [];
+            
+            for (let i = org_arr.length - 1; i >= 0; i--) {
+                rvr_arr.push(org_arr[i]);
+            }
+            console.log("original Array: ",org_arr);
+            console.log("reversed Array: ",rvr_arr);
+        </script>
+    </body>
+</html>

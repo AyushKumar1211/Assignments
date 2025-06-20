@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frequency Counter</title>
+    </head>
+    <body>
+        
+        <script>
+            let input = prompt("Enter numbers separated by commas (e.g. 1,2,3,4):");
+            let arr = input.split(',').map(Number);
+            let frequency = {};
+            for (let i = 0; i < arr.length; i++) {
+                let num = arr[i];
+                if (frequency[num]) {
+                    frequency[num]++;
+                } else {
+                    frequency[num] = 1;
+                }
+            }
+            console.log("Frequency of each number:");
+            for (let num in frequency) {
+                console.log(num+" appears "+ frequency[num]+ " times.");
+            }
+        </script>
+        
+    </body>
+</html>
