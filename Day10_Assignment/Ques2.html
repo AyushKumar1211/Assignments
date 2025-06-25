@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="features">
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+        </div>
+        <script>
+            const featuresDiv = document.getElementById("features");
+            const paragraphs = featuresDiv.querySelectorAll("p");
+            paragraphs.forEach(p => {
+                p.textContent = "✓ " + p.textContent;
+            });
+        </script>    
+    </body>
+</html>

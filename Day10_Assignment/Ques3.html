@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <ol id="leaderboard">
+            
+        </ol>
+        <script>
+            const names = ["Grace", "Arpit", "Lokendra", "Satyam"];
+            const list = document.getElementById("leaderboard");
+            names.forEach(name => {
+                const li = document.createElement("li");
+                li.textContent = name;
+                list.appendChild(li);
+            });
+        </script>
+    </body>
+</html>
