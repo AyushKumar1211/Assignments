@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+            let a = parseFloat(prompt("Enter first number: "));
+            let b = parseFloat(prompt("Enter second name: "));
+            let opr = prompt("Enter any operation(+,-,*,/): ");
+            if(opr=="+"){
+                console.log(a+" + "+b + " = "+add(a,b));
+            }
+            else if(opr=="-"){
+                console.log(a+" - "+b + " = "+sub(a,b));
+            }
+            else if(opr=="*"){
+                console.log(a+" * "+b + " = "+mul(a,b));
+            }
+            else if(opr=="/"){
+                console.log(a+" / "+b + " = "+div(a,b));
+            }
+            else{
+                console.log("Invalid Operation");
+            }
+            function add(a,b){
+                return a+b;
+            }
+            function sub(a,b){
+                return a-b;
+            }
+            function mul(a,b){
+                return a*b;
+            }
+            function div(a,b){
+                return a/b;
+            }
+        </script>
+</body>
+</html>

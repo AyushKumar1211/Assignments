@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let n = parseInt(prompt("Enter a number: "));
+            console.log(check(n));
+            function check(n){
+                if(n<0){
+                    return (check(-n));
+                }
+                if(n==0){
+                    return true;
+                }
+                if(n==1){
+                    return false;
+                }
+                return check(n-2);
+            }
+        </script>
+    </body>
+</html>
